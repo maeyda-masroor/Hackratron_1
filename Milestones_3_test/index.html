@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Static Resume</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Resume</h1>
+            </div>
+            <div class="links">
+                <h1>Create Resume</h1>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Fill the Form below to Generate Resume provided below..</h1>   
+            <form action="" class="cv-form" id = "cv-form">
+                <div class="form-container">
+                    <h2>About Section</h2>
+                    <div class="row full-width">
+                        <input name="fullname" type="text" class="input-field fullname" placeholder="Your Name" id="fullname">
+                    </div>
+                    <div class="row full-width">
+                        <input name="job_desc" type="text" class="input-field fullname" placeholder="job designation" id="job_desc">
+                    </div>
+                    <div class="row full-width">
+                        <input name = "image"  type = "file" class = "input-field image" id = "picture" accept = "image/*" >
+                    </div>
+                    <div class="row full-width">
+                      <textarea name="profile_description" class="input-field profile_description" rows="3" placeholder="Profile Description" id="profile_description"></textarea>
+                    </div>
+                    <div class="row full-width">
+                        <input name = "email"  type = "text" class = "input-field email" placeholder="your email" id = "email">
+                    </div>
+                    <div class="row full-width">
+                        <input name = "address"  type = "text" class = "input-field address" placeholder="your address" id = "address">
+                    </div>
+                    <div class="row full-width">
+                        <input name = "phonenumber"  type = "text" class = "input-field phonenumber" placeholder="your phonenumber" id = "phonenumber" >
+                    </div>
+                    <div class="row full-width">
+                        <input name = "website"  type = "text" class = "input-field website" placeholder="your website" id = "website">
+                    </div>
+                    <h1>YOUR SKILLS</h1>
+                    <div id="skill" style="padding: 5px;">
+                        <button type="button" onclick="addSkill()" class="add-button">Add Skill</button>
+                    </div>
+                    <h1>Your Education</h1>
+                    <div id="education" style="padding: 5px;">
+                        <button type="button" onclick="addEducation()" class="add-button">Add Skill</button>
+                    </div>
+                    <h1>Your Work Experience</h1>
+                    <div id="work" style="padding: 5px;">
+                        <button type="button" onclick="addWork()" class="add-button">Add Skill</button>
+                    </div>
+                </div>
+                </form>
+                </div>
+                <br/>
+                <button type="submit" id="submitBtn">Generate Resume</button>
+                <div id="generatedResume" class="resume-output"></div>
+                <script src="preview.js"></script>
+    </body>
+</html>
