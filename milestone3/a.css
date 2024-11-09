@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.row.full-width {
+  flex-direction: column;
+}
+.row.half-width .input-field {
+  flex: 1;
+}
+.input-field,
+.textarea-field {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.textarea-field {
+  resize: vertical;
+}
+
+/* Specific row spans */
+.span-2 {
+  flex: 0 0 48%;
+}
+
+.span-full {
+  flex: 1 0 100%;
+}
+
+.span-5-rows {
+  height: calc(5 * 40px); /* Adjust height as per need */
+}
+.cv-section {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* CV item styling */
+/* CV Section with 2-column grid */
+.profile_img{
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0 35px 55px hotpink;
+  border: 3px solid black;
+  width: 100px;
+  height: 100px;
+}
+img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heading {
+  padding: 2px;
+  order: 1;
+} 
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack form and CV sections vertically */
+  }
+}
+
+  

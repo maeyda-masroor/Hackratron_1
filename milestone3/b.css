@@ -1,0 +1,227 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures columns wrap on smaller screens */
+  }
+  
+  .left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-column {
+    display: flex;
+    flex-direction: column; /* Stack sub-columns vertically */
+  }
+  
+  .right-top, .right-bottom {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .container {
+      flex-direction: column; /* Stack columns vertically */
+    }
+    .right-top , .right-bottom{
+        flex-direction: row;
+    }
+    .left-column, .right-column {
+      flex: 100%; /* Make each column full-width */
+    }
+  }
+.form-section form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.row {
+display: flex;
+gap: 10px;
+margin-bottom: 15px;
+}
+.row.full-width {
+flex-direction: column;
+}
+.row.half-width .input-field {
+flex: 1;
+}
+.input-field,
+.textarea-field {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.textarea-field {
+resize: vertical;
+}
+
+/* Specific row spans */
+.span-2 {
+flex: 0 0 48%;
+}
+
+.span-full {
+flex: 1 0 100%;
+}
+
+.span-5-rows {
+height: calc(5 * 40px); /* Adjust height as per need */
+}
+.profile_img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 35px 55px hotpink;
+    border: 3px solid black;
+}
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.My_profile {
+    margin-top: 25px;
+    display: flex;
+}
+.icon {
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-color: black;
+    border-radius: 50%;
+    background-color: orange;
+    overflow: hidden;
+    position: relative;
+    padding: 2px;
+}
+  
+.heading {
+    padding: 2px;
+} 
+.para{
+    font-size: 15px;
+    margin-top: 25px;
+}
+#skill{
+    width: 300px;
+    height: auto;
+    margin-top: 25px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+}
+.personal_skill{
+    background-color:#32a842;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    padding: 10px;
+}
+.rating_skill{
+    margin-top: 25px;
+}
+.name_skill{
+    display: flex;
+}
+
+.name{
+    flex:40%;
+}
+.rating_div{
+    flex: 60%;
+
+}
+.rating-container {
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+  
+li {
+    display: inline-block;
+    margin-right: 1px; 
+} 
+.star {
+    width: 15px;
+    height: 15px;
+    background-color: #ea759f;
+    border-radius: 50%;
+    margin: 0 2px;
+    border: 1px solid black;
+}
+  
+.star.filled {
+    background-color:#ea759f ;
+}
+.contact{
+    display: flex;
+    margin-top: 25px;
+}
+.contact_icon{
+    flex:20%;
+    
+}
+.details{
+    flex:80%;
+    justify-content: center;
+  
+}
+.job_desc{
+    background-color: green;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    margin-top: 25px;
+    padding: 10px;
+}
+.education {
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin-top:30px;
+}
+
+.heading1 {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.data {
+    position: absolute;
+    top: -20px; 
+    left: 10px; 
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #f2810b; 
+    border: 1px solid #333; 
+    padding: 10px;
+}
+.data1 {
+    position: absolute;
+    top: -20px; 
+    left: 10px; 
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ea759f; 
+    border: 1px solid #333; 
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .column {
+      flex: 100%; /* Make each column full-width on smaller screens */
+    }
+}

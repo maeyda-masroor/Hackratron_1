@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Webpage</title>
+        <link rel="stylesheet" href="a.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="logo">MyCV</div>
+        <a href="#" class="nav-link">Create Resume</a>
+      </nav>
+    <div class="container">
+    <div class="form-section">
+      <form>
+      <div class="row full-width">
+          <input type="text" class="input-field" placeholder="Your Name">
+      </div>
+      <div class="row full-width">
+        <input name = "image"  type = "file" class = "input-field" id = "" accept = "image/*" onchange="previewImage()">
+      </div>
+      <div class="row full-width">
+        <textarea class="textarea-field" rows="3" placeholder="Profile Description"></textarea>
+      </div>
+      <div class="row full-width">
+        <input type="text" class="input-field" placeholder="Full-width input for row 3">
+      </div>
+      <div class="row full-width">
+          <input type="text" class="input-field" placeholder="Full-width input for row 3">
+      </div>
+      <div class="row full-width">
+          <input type="text" class="input-field" placeholder="Full-width input for row 3">
+      </div>
+      <div class="row full-width">
+          <input type="text" class="input-field" placeholder="Full-width input for row 3">
+      </div>
+      <div class="row half-width">
+        <input type="text" class="input-field" placeholder="Input 4.1">
+        <input type="text" class="input-field" placeholder="Input 4.2">
+      </div>
+      <div class="row full-width">
+        <input type="text" class="input-field span-5-rows" placeholder="Input covering 5 rows">
+      </div>
+      <div class="row half-width">
+        <input type="text" class="input-field" placeholder="Input 6.1">
+        <input type="text" class="input-field" placeholder="Input 6.2">
+      </div>
+      <div class="row full-width">
+        <input type="text" class="input-field span-5-rows" placeholder="Input covering 5 rows">
+      </div>
+      <div class="row half-width">
+        <input type="text" class="input-field span-2" placeholder="Input 7.1">
+        <input type="text" class="input-field span-2" placeholder="Input 7.2">
+        <input type="text" class="input-field span-2" placeholder="Input 7.3">
+      </div>
+      <div class="row full-width">
+        <textarea class="textarea-field" rows="3" placeholder="Textarea below row 7"></textarea>
+      </div>
+      </form>
+    </div>
+    </div>
+    
+    <!-- Right column: CV Form in two-column layout -->
+    <div class="cv-section">
+        <div class="profile_img">
+          <img src="profile.jpeg" width="20" height="20" />
+        </div>
+        <div class="heading">
+          <h1 style="font-size: 20px;">My Profile</h1>
+        </div>
+      </div>
+      <div class="cv-section">
+        <div class="cv-item">CV Field 3</div>
+        <div class="cv-item">CV Field 4</div>
+      </div>
+  </div>
+  </body>
+  </html>
+  
